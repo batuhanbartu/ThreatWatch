@@ -2,10 +2,12 @@ from database import ThreatDatabase
 from threat_checker import ThreatChecker
 import os
 from dotenv import load_dotenv
+import pyfiglet
 
 def get_user_input():
     """Kullanıcıdan IP veya domain bilgisi alır"""
-    print("\n=== Tehdit İstihbarat Sistemine Hoş Geldiniz ===")
+    ascii_art = pyfiglet.figlet_format("ThreatWatch") 
+    print(ascii_art)
     print("1. IP Adresi Ekle")
     print("2. Domain Ekle")
     print("3. Varsayılan test göstergelerini ekle")
